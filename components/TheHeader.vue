@@ -1,21 +1,20 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="container">
+  <header class="header">
     <img class="header__logo" src="@/assets/images/logo.png" alt="MMPRO logo" />
 
     <BurgerMenu />
-  </div>
+  </header>
 </template>
 
 <style lang="scss" scoped>
-.container {
+.header {
   padding: 0 20px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-}
-.header {
+
   &__logo {
     padding: 6px 2px;
   }
