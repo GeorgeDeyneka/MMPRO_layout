@@ -5,15 +5,16 @@ export interface CardData {
   routeTo: string;
 }
 
+const router = useRouter();
 const props = defineProps<{
   cardData: CardData;
 }>();
 
-const myHtml = "<h4>Hello bitch</h4>";
+const redirect = (route: string) => router.push(route);
 </script>
 
 <template>
-  <div class="card">
+  <li class="card">
     <h4 class="card__subtitle">
       {{ cardData.title }}
     </h4>
@@ -22,8 +23,11 @@ const myHtml = "<h4>Hello bitch</h4>";
       {{ cardData.text }}
     </p>
 
-    <TheButton text="Apply" />
-  </div>
+    <TheButton
+      text="Apply"
+      @click="cardData.routeTo ? redirect(cardData.routeTo) : null"
+    />
+  </li>
 </template>
 
 <style lang="scss" scoped>
