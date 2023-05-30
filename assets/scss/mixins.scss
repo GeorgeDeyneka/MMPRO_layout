@@ -1,0 +1,19 @@
+@mixin burger-line {
+  width: 24px;
+  height: 3px;
+  background-color: var(--black);
+}
+
+@mixin burger-button {
+  width: 24px;
+  padding: 20px 0;
+  border: none;
+  background-color: transparent;
+  flex-shrink: 0;
+}
+
+@mixin ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
