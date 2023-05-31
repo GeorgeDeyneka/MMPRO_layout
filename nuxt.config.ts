@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   ssr: false,
   app: {
+    // baseURL: "/MMPRO_layout/",
     head: {
       meta: [
         {
@@ -11,8 +12,8 @@ export default defineNuxtConfig({
         {
           charset: "UTF-8",
         },
-          ],
-        title: 'MMPRO Landing'
+      ],
+      title: "MMPRO Landing",
     },
   },
   css: ["@/assets/scss/style.scss"],
