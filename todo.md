@@ -1,6 +1,5 @@
 # TODOS
 
-- Separate pages on components
-- Add burger-menu & sticky header
+- Add burger-menu
 - Where static data?
 - Make deploy

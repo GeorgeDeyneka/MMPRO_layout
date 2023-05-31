@@ -10,8 +10,11 @@
 
 <style lang="scss" scoped>
 .header {
-  padding: 0 20px;
   display: flex;
+  position: sticky;
+  top: 0;
+  background-color: var(--white);
+  padding: 0 20px;
   align-items: flex-start;
   justify-content: space-between;
 

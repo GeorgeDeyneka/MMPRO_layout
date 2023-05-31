@@ -4,7 +4,8 @@
     <p class="paragraph">
       The draw will happen on the
       <span class="green-span"> 30th March </span>
-      on MMPro booth preliminary 4 PM HG time.
+      on MMPro booth preliminary
+      <span class="green-span"> 4 PM HG time. </span>
     </p>
 
     <p class="paragraph">
