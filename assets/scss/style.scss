@@ -1,11 +1,21 @@
 @import "./reset.scss";
-@import "./typography.scss";
 @import "./variables.scss";
+@import "./typography.scss";
 
 body {
   font-family: Gilroy;
 }
 
-.green-span {
-  color: var(--green-gradient-from);
+.card {
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 28px 20px 20px;
+
+  &__subtitle {
+    text-transform: uppercase;
+  }
+
+  &__paragraph {
+    padding: 9px 0;
+  }
 }
