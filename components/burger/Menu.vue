@@ -22,6 +22,12 @@ const isOpen = ref(false);
 
 function toggleMenu() {
   isOpen.value = !isOpen.value;
+  setScroll(isOpen.value);
+}
+
+function setScroll(flag: boolean) {
+  document.body.style.overflow = flag ? "hidden" : "";
+  document.body.style.position = flag ? "fixed" : "";
 }
 </script>
 
@@ -57,6 +63,7 @@ function toggleMenu() {
   width: 260px;
   top: 0;
   right: 0;
+  bottom: 0;
   gap: 35px;
   background-color: var(--white);
   transform: translateX(100%);
@@ -91,6 +98,8 @@ function toggleMenu() {
     position: absolute;
     top: 0;
     left: 0;
+    bottom: 0;
+    right: 0;
     height: 100vh;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
