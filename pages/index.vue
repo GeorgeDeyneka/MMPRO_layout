@@ -1,41 +1,7 @@
 <script setup lang="ts">
-const cardsData = [
-  {
-    title:
-      "Order MMPro services and win paid allocation of pre-IPO secondaries",
-    text: "Get a chance to win 1 of 10 NFTs with $500 paid allocations",
-    routeTo: "/order",
-  },
-  {
-    title: "Buy any tier of pre-IPO secondaries and win additional allocation",
-    text: "When purchasing pre-IPO secondaries on NFT Store you can win extra allocation of TOP performing late stage startups",
-    routeTo: "/buy",
-  },
-  {
-    title: "Buy $100K worth of pre-IPO secondaries and win NFT worth of $60K",
-    text: "NFT gives you a unique opportunity to share revenue from NFT-Store - the Trust Venture subdivision for retail investors",
-    routeTo: "/become",
-  },
-];
+import { BUTTONS_DATA } from "~/static/buttonsData";
 
-const btnsData = [
-  {
-    text: "Market Making Pro",
-    link: "https://marketmaking.pro/",
-  },
-  {
-    text: "Trust Ventures",
-    link: "https://marketmaking.pro/trust",
-  },
-  {
-    text: "NFT Store",
-    link: "https://marketmaking.pro/store",
-  },
-  {
-    text: "MMPRo Labs",
-    link: "https://nft-store.marketmaking.pro/mmpro-labs",
-  },
-];
+const btnsData = BUTTONS_DATA;
 </script>
 
 <template>
@@ -49,11 +15,16 @@ const btnsData = [
     </div>
 
     <ul class="welcome__cards">
-      <TheCard v-for="(card, i) of cardsData" :card-data="card" :key="i" />
+      <CardsTheOrderCard />
+      <CardsTheBuyCard />
+      <CardsTheBecomeCard />
     </ul>
 
     <div class="welcome__links links">
-      <h3 class="links__title">Project Links</h3>
+      <div class="links__title-wrapper">
+        <IconsTheIconLink/>
+        <h3 class="links__title">Project Links</h3>
+      </div>
 
       <div class="links__list">
         <TheLinkButton
@@ -84,7 +55,13 @@ const btnsData = [
 
 .links {
   &__title {
-    padding: 18px 24px;
+    padding: 18px 0;
+
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
   }
 
   &__list {

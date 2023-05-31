@@ -42,6 +42,12 @@ h1 {
   line-height: 125%;
 }
 
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 123.7%;
+}
+
 h3 {
   font-size: 20px;
   font-weight: 600;
@@ -58,4 +64,28 @@ button {
   font-size: 16px;
   font-weight: 600;
   line-height: 150%;
+}
+
+li {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 164%;
+}
+
+.p-strong {
+  font-weight: 500;
+}
+
+.paragraph {
+  padding: 10px 0;
+}
+
+.green-subtitle {
+  text-transform: uppercase;
+  color: var(--green-gradient-from);
+  padding: 10px 0;
+}
+
+.green-span {
+  color: var(--green-gradient-from);
 }
