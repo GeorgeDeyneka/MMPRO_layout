@@ -22,7 +22,6 @@
   padding: 20px;
   background-image: url("@/assets/images/background-two.png");
   background-size: cover;
-  // background-position: 0px -50px;
 
   &__title {
     padding: 20px 0;

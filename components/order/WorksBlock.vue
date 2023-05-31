@@ -34,6 +34,13 @@
   &__item {
     color: var(--green-gradient-from);
     text-decoration: dotted;
+
+    &::before {
+      content: "\2022";
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
   }
 }
 </style>
